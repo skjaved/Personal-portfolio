@@ -6,7 +6,7 @@
 
 :root {
   --primary-font: 'Fira Code', monospace;
-  
+
   --fw-reg: 300;
   --fw-bold: 700;
 
@@ -262,7 +262,7 @@ section.intro {
     width: min-content;
     margin: 0 auto;
     grid-column-gap: 3em;
-    grid-template-areas: 
+    grid-template-areas:
       "img title"
       "img subtitle";
     grid-template-columns: min-content max-content;
@@ -359,13 +359,13 @@ section.intro {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    grid-template-areas: 
+    grid-template-areas:
         "title img"
         "subtitle img"
         "text img";
     grid-column-gap: 2em;
   }
-    
+
     .section__title--about {
       grid-area: title;
     }
@@ -379,7 +379,7 @@ section.intro {
       padding-left: 1em;
       padding-right: calc(200px + 4em);
     }
-    
+
     .about-me__img {
       grid-area: img;
       position: relative;
@@ -464,8 +464,15 @@ footer {
 
 footer a { color: inherit; }
 
+footer p {
+  margin: 1em auto;
+  font-size: 18px
+}
+
 .footer__link {
   font-weight: bold;
+  display: inline-block;
+  margin: 0 auto;
 }
 
 .footer__link:hover,
@@ -477,11 +484,15 @@ footer a { color: inherit; }
   text-decoration: underline;
 }
 
+.footer__link img {
+  max-width: 200px;
+}
+
 .social-list {
   list-style: none;
   display: flex;
   justify-content: center;
-  margin: 2em 0 0;
+  margin: 0;
   padding: 0;
 }
 
