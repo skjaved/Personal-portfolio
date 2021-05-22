@@ -24,6 +24,19 @@
           0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 
+::selection {
+  background-color: var(--clr-accent);
+  color: var(--clr-dark);
+}
+
+::-webkit-scrollbar {
+  width: 6px
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-clr);
+}
+
 @media (min-width: 800px) {
     :root {
         --fs-h1: 4.5rem;
