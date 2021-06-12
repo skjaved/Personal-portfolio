@@ -570,7 +570,13 @@ footer p {
 .resume-section {
   max-width: calc(1000px + 2em);
   margin: 0 auto;
-  padding: 5em 2em;
+  padding: 2em;
+}
+
+@media (min-width: 800px) {
+  .resume-section {
+    padding: 5em 2em;
+  }
 }
 
 .resume-section ul {
@@ -591,7 +597,7 @@ footer p {
 }
 
 .resume-body__title {
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   padding-bottom: .5rem;
   border-bottom: 2px solid var(--clr-accent);
   margin: 3rem 0 1.5rem;
@@ -601,4 +607,10 @@ footer p {
   letter-spacing: -.05rem;
   text-decoration: underline;
   margin: 2.5rem 0 0;
+}
+
+@media (min-width: 800px) {
+  .resume-body__title {
+    font-size: 2.2rem;
+  }
 }
