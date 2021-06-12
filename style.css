@@ -70,7 +70,13 @@ img {
 }
 
 section {
-  padding: 5em 2em;
+  padding: 3em 2em;
+}
+
+@media (min-width: 600px) {
+  section {
+    padding: 5em 2em;
+  }
 }
 
 /* Typography */
@@ -261,8 +267,8 @@ header .header-container {
 
 /* Intro section */
 section.intro {
-  padding-top: 7em;
-  padding-bottom: 7em;
+  padding-top: 4em;
+  padding-bottom: 3em;
 }
 
 .intro {
@@ -276,6 +282,11 @@ section.intro {
 }
 
 @media (min-width: 600px) {
+  section.intro {
+    padding-top: 7em;
+    padding-bottom: 7em;
+  }
+
   .intro {
     display: grid;
     width: min-content;
@@ -335,6 +346,10 @@ section.intro {
   background-color: var(--clr-dark);
 }
 
+.service + .service {
+  margin-top: 2em;
+}
+
 @media (min-width: 800px) {
   .services {
     display: flex;
@@ -373,6 +388,14 @@ section.intro {
   border-radius: 4px;
 }
 
+.about-me__btn + .about-me__btn {
+  margin-top: 1em;
+}
+
+.about-me__img {
+  margin-top: 2em;
+}
+
 @media (min-width: 600px) {
   .about-me {
     display: grid;
@@ -399,10 +422,15 @@ section.intro {
       padding-right: calc(200px + 4em);
     }
 
+    .about-me__btn + .about-me__btn {
+      margin-left: 1em;
+    }
+
     .about-me__img {
       grid-area: img;
       position: relative;
       z-index: 2;
+      margin-top: 0;
     }
 }
 
@@ -485,14 +513,14 @@ footer a { color: inherit; }
 
 footer p {
   margin: 1em auto;
-  font-size: 18px
+  font-size: 18px;
 }
 
 .footer__link {
   font-weight: normal;
-  font-size: 16px;
   display: inline-block;
   margin: 0 auto;
+  font-size: 16px;
 }
 
 .footer__link:hover,
@@ -512,8 +540,8 @@ footer p {
   list-style: none;
   display: flex;
   justify-content: center;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 .social-list__item {
