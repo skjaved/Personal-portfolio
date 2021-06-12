@@ -360,6 +360,7 @@ section.intro {
 
   .service + .service {
     margin-left: 2em;
+    margin-top: 0;
   }
 }
 
