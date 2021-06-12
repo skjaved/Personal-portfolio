@@ -536,3 +536,40 @@ footer p {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* Resume */
+.resume-section {
+  max-width: calc(1000px + 2em);
+  margin: 0 auto;
+  padding: 5em 2em;
+}
+
+.resume-section ul {
+  list-style: disc;
+  margin: 2rem 0;
+}
+
+.resume-section p {
+  margin-top: 1rem;
+}
+
+.resume-header__designation {
+  font-size: 1.5rem;
+}
+
+#resume a {
+  color: var(--clr-accent);
+}
+
+.resume-body__title {
+  font-size: 2.2rem;
+  padding-bottom: .5rem;
+  border-bottom: 2px solid var(--clr-accent);
+  margin: 3rem 0 1.5rem;
+}
+
+.resume-body__subtitle {
+  letter-spacing: -.05rem;
+  text-decoration: underline;
+  margin: 2.5rem 0 0;
+}
